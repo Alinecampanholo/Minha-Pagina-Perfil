@@ -17,6 +17,8 @@ $ git clone git@github.com:Alinecampanholo/Minha-Pagina-Perfil.git
 Em caso de dowload extraia o arquivo para um local em sua máquina de sua preferência.
 Acesse a pasta clonada ou baixada e abra o arquivo Index.html em seu navegador.
 
+Para acessar a página diretamente: https://alinecampanholo.github.io/Minha-Pagina-Perfil/
+
 
 ### 🛠 Tecnologias
 HTML<> <br>

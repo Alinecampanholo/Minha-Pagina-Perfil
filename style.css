@@ -181,8 +181,8 @@ p{
     height: 400px;
     padding: 30px;
     text-align: center;
-
 }
+
 #formação{
     margin-top: 50px;
 }
@@ -207,9 +207,7 @@ footer h3{
 
 
 @media (max-width: 768px){
-    .container{
-        padding: 0px 10px;
-    }
+
     #menu{
         width: 100%;
         display: block;
@@ -222,6 +220,7 @@ footer h3{
         font-size: 18px;
         visibility: hidden;
         overflow-y: hidden;
+        background: none;
     }
 
     #nav.active #menu{
@@ -233,7 +232,7 @@ footer h3{
     #menu a{
         display: flex;
         justify-content: end;
-        margin: 0 10px;
+        margin: 0 20px;
         color: beige;
         margin-top: 10px;
     }
@@ -290,17 +289,29 @@ footer h3{
         text-decoration: underline rgb(237, 217, 4) ;
     }
 
-    .hobies1, .hobies2{
-        display: flex;
-        flex-direction: column;
-    }
-
     .textos{
         margin-left: 10px;
     }
 
     .hobies{
-        margin-left: -13px;
+        margin-left: -10px;
+
+    }
+
+    .hobies1, .hobies2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #div_hobies{
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .sobre img{
+        width: 300px;
+        height: 200px;
     }
     .sobre{
         margin-top: 50px;

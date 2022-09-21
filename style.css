@@ -211,9 +211,9 @@ footer h3{
         padding: 0px 10px;
     }
     #menu{
+        width: 100%;
         display: block;
         position: absolute;
-        width: 100%;
         right: 0px;
         height: 0px;
         transition: .6s;
@@ -233,7 +233,7 @@ footer h3{
     #menu a{
         display: flex;
         justify-content: end;
-        margin: 0 50px;
+        margin: 0 10px;
         color: beige;
         margin-top: 10px;
     }

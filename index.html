@@ -6,23 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Aline Campanholo</title>
 </head>
 <body>
+    <div class="modal">
+        <a href="#">X</a>
+        <br>
+        <h2>Obrigada pela visita!!!</h2>
+        <p>
+            <form>
+            Insira seu linkedin no campo abaixo para nos conectarmos ;)
+            <br> <br>
+            <input type="text" name="url"/>
+            <input type="submit" value="enviar"/>            
+            </form>
+        </p>
+    </div>
     <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="projetos.html" rel="next">Projetos</a>
-                </li>
-                <li>
-                    <a href="contato.html" rel="next">Contato</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navegação">
+            <img class="logo" src="imagens/logo4b.png" alt="logo Aline">
+            <nav id="nav">
+                <button id="btn-mobile">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
+                    <li><a href="">Sobre mim</a></li>
+                    <li><a href="projetos.html" rel="next">Projetos</a></li>
+                    <li><a href="contato.html" rel="next">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
         <header>
             <div class="center">
                 <img class="fotoperfil" src="imagens/Aline.jpeg" alt="Foto Aline">
@@ -31,8 +45,8 @@
             </div>
         </header>
         <main>
-            <div class="sobre">
-                <section>
+            <div class="textos">
+                <section class="sobre">
                     <h3>Sobre mim</h3>
                     <p>Hello World!!! <br>
                        Que legal te ver por aqui :), bora me conhecer um pouco mais? <br>
@@ -41,17 +55,34 @@
                        Amo estar entre a natureza, o barulho do mar me acalma e um dia de céu azul me faz sorrir. <br>
                        Sou muito família, adoro estar com amigos e uma boa música com boa conversa. Adoro ver meu filho brincar e incentivá-lo no que ama fazer.
                        <br>
-                       Meus hobies ao longo dos tempos foram: 
-                       <li> Ler romances (adoro virar páginas e sentir o cheiro da impressão, enquanto viajo no cenário e história)</li>
-                       <li> Bordar ponto cruz (a sensação de que cada ponto feito fico mais próximo do objetivo final é estimulante)</li>
-                       <li> Fazer mergulho autonomo (em nenhum lugar que já estive me traz tanta paz e comunhão comigo mesmo do que o fundo do mar)</li>
-                       <li> Dançar (o movimento define o corpo e liberta a alma)</li>
-                       <li> Viajar (curto antes, durante e depois - adoro planejar cada detalhe e depois colocar em album as capturas das belezas e dos sorrisos que presenciei)</li>
+                       Meus hobies ao longo dos tempos foram:
+                       <div class="hobies">
+                            <div class="hobies1" >
+                                <div id="div_hobies">
+                                    <img class="img_hobies" src="imagens/livros.jpg" alt="Livros"> 
+                                    <p><em>Ler romances</em>: <br> Adoro virar as páginas e sentir o cheiro  da impressão, enquanto viajo no cenário e história.</p>
+                                </div>
+                                <div id="div_hobies">
+                                    <img class="img_hobies" src="imagens/ponto cruz.jpg" alt="Ponto Cruz">
+                                    <p><em>Bordar ponto cruz</em>: <br> A sensação de que cada ponto feito fico mais próximo do objetivo final é estimulante.</p>
+                                </div>
+                             </div>
+                             <div class="hobies2">
+                                <div id="div_hobies">
+                                    <img class="img_hobies" src="imagens/mergulho.JPG" alt="Mergulho Autonomo">
+                                    <p><em>Mergulho autonomo</em>: <br> Em nenhum lugar que já estive me traz tanta paz e comunhão comigo mesmo do que o fundo do mar.</p>
+                                </div>
+                                <div id="div_hobies">
+                                    <img class="img_hobies" src="imagens/viagem.jpg" alt="Paisagem">
+                                    <p><em>Viajar</em>: <br> Curto antes, durante e depois - adoro planejar cada detalhe e depois colocar em album as capturas das belezas e dos sorrisos que presenciei.</p>
+                                </div>
+                            </div>
+                       </div>
 
 
                        </p>
                 </section>
-                <section>
+                <section id="formação">
                     <br>
                     <h3>Formação</h3>
                     <p>Sou graduada em Administração de Empresas (2002-2006), e pós gradiada em Gestão De Negócios (2004-2005) ambas pela FAM - Faculdade de Americana. <br>
@@ -84,5 +115,6 @@
             </a>
         </footer>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

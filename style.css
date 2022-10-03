@@ -95,7 +95,7 @@ a{
 }
 .center{
     text-align: center;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 .ident{
     display: flex;
@@ -204,7 +204,34 @@ footer h3{
     text-decoration: none;
 }
 
+.form{
+ width: 50%;
+ padding: 30px;
+ padding-left: 50px;
+}
 
+#nomefor, #telfor, #emailfor, #msgfor{
+    width: 100%;
+    padding: 15px;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+#nomefor:invalid, #emailfor:invalid, #msgfor:invalid{
+    border-color:  red;
+}
+
+#nomefor:valid, #emailfor:valid, #msgfor:valid{
+    border-color:  rgb(237, 217, 4);
+}
+
+#envfor{
+    font-family: 'Source Sans Pro';
+    color:rgb(37, 36, 37);
+    font-size: 20px;
+    font-weight: 700;
+
+}
 
 @media (max-width: 768px){
 
@@ -312,9 +339,6 @@ footer h3{
     .sobre img{
         width: 300px;
         height: 200px;
-    }
-    .sobre{
-        margin-top: 50px;
     }
 
     .modal{

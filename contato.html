@@ -9,47 +9,67 @@
     <title>Projetos</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" rel="prev">Voltar</a>
-                </li>
-                <li>
-                    <a href="projetos.html" rel="next">Projetos</a>
-                </li>
-                <li>
-                    <a href="contato.html" rel="next">Contato</a>
-                </li>
+    <div class="navegação">
+        <img class="logo" src="imagens/logo4b.png" alt="logo Aline">
+        <nav id="nav">
+            <button id="btn-mobile">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="index.html" rel="prev">Voltar</a></li>
+                <li><a href="projetos.html" rel="next">Projetos</a></li>
+                <li><a href="contato.html" rel="next">Contato</a></li>
             </ul>
         </nav>
-        <header>
-            <div class="ident">
-                <img class="fotoperfil" src="imagens/Aline.jpeg" alt="Foto Aline">
-                <div class="ident2">
-                    <h1>Aline Campanholo</h1>
-                    <h2>Administradora e Estudante Frontend</h2>
-                </div>
-            </div>
-        </header>
+    </div>
+    <header>
+        <div class="center">
+            <img class="fotoperfil" src="imagens/Aline - perfil.jpeg" alt="Foto Aline">
+            <h1>Aline Campanholo</h1>
+            <h2>Administradora e Estudante Frontend</h2>
+        </div>
+    </header>
         <main>
-            <div class="sobre">
-                <section>
-                    <h3>Contato</h3>
-                    <p>Em desenvolvimento....</p>
-                </section>
-            </div>
+            <section>
+                <div class="form">
+                    <h3>Contato:</h3>
+                    <form action="Php/envio-form.php" method="post">
+                        <p>
+                            <label for="nomefor">Nome:</label>
+                            <input type="text" name="nome" id="nomefor" required>
+                        </p>
+                        <p>
+                            <label for="telfor">Telefone:</label>
+                            <input type="tel" name="telefone" id="telfor">
+                        </p>
+                        <p>
+                            <label for="emailfor">E-mail:</label>
+                            <input type="email" name="email" id="emailfor" required>
+                        </p>
+                        <p>
+                            <label for="msgfor">Mensagem:</label>
+                            <textarea name="mensagem" id="msgfor" cols="30" rows="10" required size="1000"></textarea>
+                        </p>
+                        <input type="submit" value="Enviar mensagem" id="envfor">
+                        <input type="reset" value="Limpar" id="envfor">
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
-            <a href="https://github.com/Alinecampanholo" target="_blank" rel="noopener noreferrer">
-            <img src="imagens/1298743_github_git_logo_social_icon.svg" alt="icone Github">
-            <h3>Github</h3>
-            </a>
             <a href="https://www.linkedin.com/in/aline-campanholo/" target="_blank" rel="noopener noreferrer">
             <img src="imagens/834713_linkedin_icon.svg" alt="icone linkedin">
             <h3>Linkedin</h3>
             </a>
+
+            <a href="https://github.com/Alinecampanholo" target="_blank" rel="noopener noreferrer">
+            <img src="imagens/1298743_github_git_logo_social_icon.svg" alt="icone Github">
+            <h3>Github</h3>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5519991914070" target="_blank">
+            <img src="imagens/001-whatsapp.png" alt="icone whatsapp">
+            <h3>Whatsapp</h3>
         </footer>
-    </div>
 </body>
 </html>

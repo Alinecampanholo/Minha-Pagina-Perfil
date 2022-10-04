@@ -7,7 +7,7 @@
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
-  //Compo E-mail
+  //Campo E-mail
   $arquivo = "
     <html>
       <p><b>Nome: </b>$nome</p>
